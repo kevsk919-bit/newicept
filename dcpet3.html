@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DCpET 3 — DCpET Repository</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="nav-region" id="main-nav-container"></div>
+  <script src="nav.js"></script>
+
+
+  <main>
+    <div id="dcpet-content"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+
+      <div class="footer-logos-left">
+        <img src="home/pup-logo-transparent.png" alt="PUP Logo">
+        <img src="home/icept-logo.png" alt="ICEPT Logo">
+      </div>
+
+      <div class="footer-contact">
+        <p class="contact-title">Contact Information:</p>
+
+        <div class="contact-details">
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span>icept2023@gmail.com</span>
+          </div>
+
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
+            </svg>
+            <span>Institute of Computer Engineers and Pioneers of Technology</span>
+          </div>
+
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>Yumul St., Lopez, Philippines, 4316</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-logo-right">
+        <img src="home/Bagong-Pilipinas-Logo.png" alt="Bagong Pilipinas Logo">
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    renderNav('dcpet');
+    document.addEventListener('DOMContentLoaded', function () {
+      renderDcpetPage("dcpet-content", "DCpET/subject picture/dcpet3.png", "3rd Year", [
+        {
+          "title": "1st Semester",
+          "subjects": [
+            {
+              "title": "CPE Laws and Professional",
+              "links": {
+                "module": "",
+                "ppt": "",
+                "quiz": "",
+                "output": ""
+              }
+            },
+            {
+              "title": "Data and Digital Communication",
+              "links": {
+                "module": "DCpET/3rd Year/Data and Digital Communication Syllabus.pdf",
+                "ppt": "",
+                "quiz": "",
+                "output": ""
+              }
+            },
+            {
+              "title": "Microprocessors",
+              "links": {
+                "module": "DCpET/3rd Year/Microprocessor Syllabus.pdf",
+                "ppt": "",
+                "quiz": "",
+                "output": ""
+              }
+            },
+            {
+              "title": "Computer Engineering Drafting",
+              "links": {
+                "module": "DCpET/3rd Year/Computer Engineering Drafting and Design.pdf",
+                "ppt": "",
+                "quiz": "",
+                "output": ""
+              }
+            },
+            {
+              "title": "CPE Professional Course 3",
+              "links": {
+                "module": "",
+                "ppt": "",
+                "quiz": "",
+                "output": ""
+              }
+            },
+            {
+              "title": "Database Management System 2",
+              "links": {
+                "module": "DCpET/Instructional Materials/3rd Year IMs/Database Management System 2 IM.pdf",
+                "ppt": "",
+                "quiz": "",
+                "output": ""
+              }
+            },
+            {
+              "title": "Technical Communication",
+              "links": {
+                "module": "DCpET/3rd Year/TECHNICAL COMMUNICATION.pdf",
+                "ppt": "",
+                "quiz": "",
+                "output": ""
+              }
+            },
+            {
+              "title": "CpET Project Development 1",
+              "links": {
+                "module": "",
+                "ppt": "",
+                "quiz": "",
+                "output": ""
+              }
+            }
+          ]
+        },
+        {
+          "title": "2nd Semester",
+          "subjects": [
+            {
+              "title": "Seminar on Issues and Trends in CPET",
+              "links": {
+                "module": "",
+                "ppt": "",
+                "quiz": "",
+                "output": ""
+              }
+            },
+            {
+              "title": "Technopreneurship",
+              "links": {
+                "module": "DCpET/Instructional Materials/3rd Year IMs/technopreneurship IM.pdf",
+                "ppt": "",
+                "quiz": "",
+                "output": ""
+              }
+            },
+            {
+              "title": "CpET Development 2",
+              "links": {
+                "module": "",
+                "ppt": "",
+                "quiz": "",
+                "output": ""
+              }
+            },
+            {
+              "title": "Practicum 2",
+              "links": {
+                "module": "",
+                "ppt": "",
+                "quiz": "",
+                "output": ""
+              }
+            }
+          ]
+        }
+      ]);
+    });
+  </script>
+</body>
+
+</html>
