@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DCpET 1 — DCpET Repository</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="nav-region" id="main-nav-container"></div>
+  <script src="nav.js"></script>
+
+  <main>
+    <div id="dcpet-content"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+
+      <div class="footer-logos-left">
+        <img src="home/pup-logo-transparent.png" alt="PUP Logo">
+        <img src="home/icept-logo.png" alt="ICEPT Logo">
+      </div>
+
+      <div class="footer-contact">
+        <p class="contact-title">Contact Information:</p>
+
+        <div class="contact-details">
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span>icept2023@gmail.com</span>
+          </div>
+
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
+            </svg>
+            <span>Institute of Computer Engineers and Pioneers of Technology</span>
+          </div>
+
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>Yumul St., Lopez, Philippines, 4316</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-logo-right">
+        <img src="home/Bagong-Pilipinas-Logo.png" alt="Bagong Pilipinas Logo">
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    renderNav('dcpet');
+    document.addEventListener('DOMContentLoaded', function () {
+      renderDcpetPage('dcpet-content', "DCpET/subject picture/dcpet1.png", "1st Year", [
+        {
+          "title": "1st Semester",
+          "subjects": [
+            {
+              "title": "Chemistry for Engineers",
+              "links": {
+                "module": "DCpET/1st Year/Chemistry for Engineers/Chemistry for Engineers-Syllabus.pdf",
+                "ppt": "",
+                "quiz": "",
+                "output": ""
+              }
+            },
+            {
+              "title": "Computer Hardware and Fundamentals",
+              "links": {
+                "module": "DCpET/Instructional Materials/1st Year IMs/Francisco IM as per UTLDO Computer Hardware Fundamentals-5MB (4).pdf",
+                "ppt": "",
+                "quiz": "",
+                "output": ""
+              }
+            },
+            {
+              "title": "Data Structure and Algorithm",
+              "links": {
+                "module": "DCpET/1st Year/(Sanglay) Data Structure and Algorithms/Data Structures and Algorithm.docx",
+                "ppt": "",
+                "quiz": "",
+                "output": ""
+              }
+            },
+            {
+              "title": "Engineering Drawing",
+              "links": {
+                "module": "",
+                "ppt": "",
+                "quiz": "",
+                "output": ""
+              }
+            },
+            {
+              "title": "Web Technology and Programming",
+              "links": {
+                "module": "DCpET/1st Year/web syllabus.docx",
+                "ppt": "",
+                "quiz": "",
+                "output": ""
+              }
+            },
+            {
+              "title": "Programming Logic and Design",
+              "links": {
+                "module": "",
+                "ppt": "",
+                "quiz": "",
+                "output": ""
+              }
+            },
+            {
+              "title": "Basic Calculus",
+              "links": {
+                "module": "DCpET/1st Year/(Villegas) Basic calculus/villegas sylabus.docx",
+                "ppt": "",
+                "quiz": "",
+                "output": ""
+              }
+            },
+            {
+              "title": "General Physics",
+              "links": {
+                "module": "DCpET/1st Year/General Physics/General Physics Syllabus.docx",
+                "ppt": "",
+                "quiz": "",
+                "output": ""
+              }
+            },
+            {
+              "title": "Calculus 1",
+              "links": {
+                "module": "DCpET/1st Year/calculus 1/CALCULUS 1.docx",
+                "ppt": "DCpET/1st Year/calculus 1/Calculus 1.pptx",
+                "quiz": "",
+                "output": ""
+              }
+            },
+            {
+              "title": "Fundamental of Electronic Circuits",
+              "links": { "module": "DCpET/Instructional Materials/1st Year IMs/New IM Fundamental of Electronic Circuits..docx.pdf", "ppt": "", "quiz": "", "output": "" }
+            }
+          ]
+        },
+        {
+          "title": "2nd Semester",
+          "subjects": [
+            {
+              "title": "Object Oriented Programming",
+              "links": {
+                "module": "",
+                "ppt": "",
+                "quiz": "",
+                "output": ""
+              }
+            },
+            {
+              "title": "Visual Graphics and Design",
+              "links": {
+                "module": "DCpET/Instructional Materials/1st Year IMs/Visual Graphics and Design org..pdf",
+                "ppt": "",
+                "quiz": "",
+                "output": ""
+              }
+            },
+            {
+              "title": "Web Technology 2",
+              "links": {
+                "module": "",
+                "ppt": "",
+                "quiz": "",
+                "output": ""
+              }
+            },
+            {
+              "title": "Computer Aided Drafting",
+              "links": {
+                "module": "",
+                "ppt": "",
+                "quiz": "",
+                "output": ""
+              }
+            },
+            {
+              "title": "Purposive Communication",
+              "links": {
+                "module": "",
+                "ppt": "",
+                "quiz": "",
+                "output": ""
+              }
+            },
+            {
+              "title": "Pathfit 2",
+              "links": {
+                "module": "",
+                "ppt": "",
+                "quiz": "",
+                "output": ""
+              }
+            }
+          ]
+        },
+        {
+          "title": "Summer Semester",
+          "subjects": [
+            {
+              "title": "Calculus 2",
+              "links": {
+                "module": "",
+                "ppt": "",
+                "quiz": "",
+                "output": ""
+              }
+            },
+            {
+              "title": "Physics for Engineers",
+              "links": {
+                "module": "",
+                "ppt": "",
+                "quiz": "",
+                "output": ""
+              }
+            }
+          ]
+        }
+      ]);
+    });
+  </script>
+</body>
+
+</html>

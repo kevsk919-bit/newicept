@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICEpT Video</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="nav-region" id="main-nav-container"></div>
+  <script src="nav.js"></script>
+
+  <main class="icept-blank-video-page" aria-label="ICEpT video page">
+    <a class="icept-video-back-link" href="icept-format.html?type=video">&#8592; Back to Video Menu</a>
+  </main>
+
+  <script>
+    var videoTopic = new URLSearchParams(window.location.search).get('topic');
+
+    if (videoTopic === 'arduino-uno') {
+      var arduinoVideos = [
+        { source: 'ICEpT Videos/april2 lecture.mp4', type: 'video/mp4' },
+        { source: 'ICEpT Videos/video1164441154.mp4', type: 'video/mp4' },
+        { source: 'ICEpT Videos/video1134265140.mp4', type: 'video/mp4' },
+        { source: 'ICEpT Videos/video1083075389.mp4', type: 'video/mp4' },
+        { source: 'ICEpT Videos/2022-11-15 18-39-57.mp4', type: 'video/mp4' },
+        { source: 'ICEpT Videos/2022-10-22 08-20-35.mp4', type: 'video/mp4' },
+        { source: 'ICEpT Videos/2022_10_13_06_31_52.mp4', type: 'video/mp4' },
+        { source: 'ICEpT Videos/2022_10_11_06_52_18.mp4', type: 'video/mp4' }
+      ];
+
+      document.title = 'Arduino Uno Video - ICEpT';
+      document.querySelector('.icept-blank-video-page').classList.add('has-video');
+      document.querySelector('.icept-blank-video-page').innerHTML = `
+        <div class="icept-video-list">
+          ${arduinoVideos.map(function (video, videoIndex) {
+            return `
+              <details class="icept-video-item">
+                <summary class="icept-video-menu-card">
+                  <span class="icept-format-icon" aria-hidden="true">VIDEO</span>
+                  <span class="icept-video-menu-copy">
+                    <strong>Arduino Uno Video ${videoIndex + 1}</strong>
+                    <small>Click to watch</small>
+                  </span>
+                  <span class="icept-format-arrow" aria-hidden="true">&#8594;</span>
+                </summary>
+                <div class="icept-video-player">
+                  <video controls playsinline preload="metadata">
+                    <source src="${video.source}" type="${video.type}">
+                  </video>
+                </div>
+              </details>
+            `;
+          }).join('')}
+        </div>
+      `;
+    }
+
+    renderNav('university');
+  </script>
+</body>
+
+</html>

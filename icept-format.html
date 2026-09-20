@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICEpT Format - DCpET Repository</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="nav-region" id="main-nav-container"></div>
+  <script src="nav.js"></script>
+
+  <main>
+    <section class="icept-format-page">
+      <div class="icept-format-page-wrap" id="icept-format-content"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-logos-left">
+        <img src="home/pup-logo-transparent.png" alt="PUP Logo">
+        <img src="home/icept-logo.png" alt="ICEPT Logo">
+      </div>
+
+      <div class="footer-contact">
+        <p class="contact-title">Contact Information:</p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <span aria-hidden="true">&#9993;</span>
+            <span>icept2023@gmail.com</span>
+          </div>
+          <div class="contact-item">
+            <span aria-hidden="true">&#9679;</span>
+            <span>Institute of Computer Engineers and Pioneers of Technology</span>
+          </div>
+          <div class="contact-item">
+            <span aria-hidden="true">&#9679;</span>
+            <span>Yumul St., Lopez, Philippines, 4316</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-logo-right">
+        <img src="home/Bagong-Pilipinas-Logo.png" alt="Bagong Pilipinas Logo">
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    var formatData = {
+      video: {
+        label: 'Video',
+        title: 'Video for CSS NC II',
+        description: 'This page is for CSS NC II training videos, demonstrations, and other video-based learning materials.',
+        icon: '&#9654;',
+        emptyTitle: 'CSS NC II Video',
+        emptyText: 'The CSS NC II video will be placed here for students to watch.',
+        topics: [
+          { title: 'CSS NC II Video', description: 'Computer Systems Servicing NC II lessons and demonstrations.' },
+          { title: 'Arduino Uno Video', description: 'Arduino Uno tutorials, projects, and hands-on demonstrations.' }
+        ]
+      },
+      documents: {
+        label: 'Documents',
+        title: 'Modules and Guides',
+        description: 'Browse ICEpT documents, modules, guides, and other written learning materials.',
+        icon: 'PDF',
+        emptyTitle: 'Documents and Modules',
+        emptyText: 'Documents and guides will be placed here as they become available.'
+      },
+      presentations: {
+        label: 'Presentations',
+        title: 'Slides and Lessons',
+        description: 'Find ICEpT presentations, lecture slides, and visual lesson materials in one place.',
+        icon: 'PPT',
+        emptyTitle: 'Presentations and Slides',
+        emptyText: 'Presentation files and lesson slides will be placed here as they become available.'
+      },
+      other: {
+        label: 'Other Formats',
+        title: 'Additional Resources',
+        description: 'This page can hold images, links, forms, and other ICEpT resources that do not fit the other formats.',
+        icon: 'FILE',
+        emptyTitle: 'Additional ICEpT Resources',
+        emptyText: 'Other resource formats will be organized here as they become available.',
+        resources: [
+          { title: 'Trademark-Application.pdf', kind: 'PDF', path: 'Other Formats/Trademark-Application.pdf' },
+          { title: 'Three-Proposed-Titles.docx', kind: 'DOCX', path: 'Other Formats/Three-Proposed-Titles.docx', preview: 'Other Formats/Previews/Three-Proposed-Titles.pdf' },
+          { title: 'Revision-Letter-after 1st presentation.docx', kind: 'DOCX', path: 'Other Formats/Revision-Letter-after 1st presentation.docx', preview: 'Other Formats/Previews/Revision-Letter-after 1st presentation.pdf' },
+          { title: 'REQUIREMENTS for 3rd YEAR.docx', kind: 'DOCX', path: 'Other Formats/REQUIREMENTS for 3rd YEAR.docx', preview: 'Other Formats/Previews/REQUIREMENTS for 3rd YEAR.pdf' },
+          { title: 'NEEDS-ANALYSIS with UREC-FORMAT.docx', kind: 'DOCX', path: 'Other Formats/NEEDS-ANALYSIS with UREC-FORMAT.docx', preview: 'Other Formats/Previews/NEEDS-ANALYSIS with UREC-FORMAT.pdf' },
+          { title: 'IPOPHLFillableForm300.pdf', kind: 'PDF', path: 'Other Formats/IPOPHLFillableForm300.pdf' },
+          { title: 'IPOPHLFillableForm200.pdf', kind: 'PDF', path: 'Other Formats/IPOPHLFillableForm200.pdf' },
+          { title: 'IPOPHLFillableForm100.pdf', kind: 'PDF', path: 'Other Formats/IPOPHLFillableForm100.pdf' },
+          { title: 'IMRAD FORMAT.docx', kind: 'DOCX', path: 'Other Formats/IMRAD FORMAT.docx', preview: 'Other Formats/Previews/IMRAD FORMAT.pdf' },
+          { title: 'Chapter 1 to 5 - Format.docx', kind: 'DOCX', path: 'Other Formats/Chapter 1 to 5 - Format.docx', preview: 'Other Formats/Previews/Chapter 1 to 5 - Format.pdf' },
+          { title: 'CAPSULE PROPOSAL.docx', kind: 'DOCX', path: 'Other Formats/CAPSULE PROPOSAL.docx', preview: 'Other Formats/Previews/CAPSULE PROPOSAL.pdf' },
+          { title: 'BCRR-Forms-Transaction-Form-1_1.pdf', kind: 'PDF', path: 'Other Formats/BCRR-Forms-Transaction-Form-1_1.pdf' }
+        ]
+      }
+    };
+
+    var type = new URLSearchParams(window.location.search).get('type') || 'video';
+    var data = formatData[type] || formatData.video;
+    document.title = data.title + ' - ICEpT';
+
+    var resourceContent = data.topics
+      ? `
+        <section class="icept-video-topic-panel">
+          <div class="icept-resource-list-heading">
+            <span class="icept-kicker">Video Categories</span>
+            <h2>Choose a Video Collection</h2>
+            <p>Choose the video category you want to open. Each section is ready for its own training videos.</p>
+          </div>
+          <div class="icept-video-topic-grid">
+            ${data.topics.map(function (topic) {
+              return `
+                <a class="icept-video-topic-card" href="icept-video.html?topic=${topic.title === 'CSS NC II Video' ? 'css-ncii' : 'arduino-uno'}">
+                  <div class="icept-video-topic-copy">
+                    <span class="icept-format-icon" aria-hidden="true">VIDEO</span>
+                    <div>
+                      <span class="icept-kicker">Video</span>
+                      <h3>${topic.title}</h3>
+                      <p>${topic.description}</p>
+                    </div>
+                    <span class="icept-format-arrow" aria-hidden="true">&#8594;</span>
+                  </div>
+                </a>
+              `;
+            }).join('')}
+          </div>
+        </section>
+      `
+      : data.resources
+      ? `
+        <section class="icept-resource-list-panel icept-resource-list-panel-only">
+          <div class="icept-resource-list">
+            ${data.resources.map(function (resource) {
+              var resourceUrl = encodeURI(resource.path);
+              var previewUrl = encodeURI(resource.preview || resource.path);
+              var openLabel = resource.kind === 'PDF' ? 'Open PDF' : 'Open Preview';
+              var openLink = `<a class="icept-resource-action open" href="${previewUrl}" target="_blank" rel="noopener">${openLabel}</a>`;
+              return `
+                <article class="icept-resource-item">
+                  <span class="icept-resource-kind">${resource.kind}</span>
+                  <div class="icept-resource-copy">
+                    <h3>${resource.title}</h3>
+                    <div class="icept-resource-actions">
+                      ${openLink}
+                      <a class="icept-resource-action" href="${resourceUrl}" download>Download ${resource.kind}</a>
+                    </div>
+                  </div>
+                </article>
+              `;
+            }).join('')}
+          </div>
+        </section>
+      `
+      : `
+        <section class="icept-resource-panel">
+          <div class="icept-resource-icon" aria-hidden="true">${data.icon}</div>
+          <h2>${data.emptyTitle}</h2>
+          <p>${data.emptyText}</p>
+          <span class="icept-resource-status">Resource area ready</span>
+        </section>
+      `;
+
+    var pageIntro = (data.resources || data.topics) ? `
+      <a class="icept-back-link" href="organization.html">&#8592; Back to ICEpT Formats</a>
+    ` : `
+      <a class="icept-back-link" href="organization.html">&#8592; Back to ICEpT Formats</a>
+      <header class="icept-format-page-header">
+        <span class="icept-kicker">ICEpT / ${data.label}</span>
+        <h1>${data.title}</h1>
+        <p>${data.description}</p>
+      </header>
+    `;
+
+    document.querySelector('.icept-format-page').classList.toggle('icept-resource-only-page', Boolean(data.resources));
+    document.getElementById('icept-format-content').innerHTML = pageIntro + resourceContent;
+
+    renderNav('university');
+  </script>
+</body>
+
+</html>
