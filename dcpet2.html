@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DCpET 2 — DCpET Repository</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="nav-region" id="main-nav-container"></div>
+  <script src="nav.js"></script>
+  </div>
+
+
+  <main>
+    <div id="dcpet-content"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+
+      <div class="footer-logos-left">
+        <img src="home/pup-logo-transparent.png" alt="PUP Logo">
+        <img src="home/icept-logo.png" alt="ICEPT Logo">
+      </div>
+
+      <div class="footer-contact">
+        <p class="contact-title">Contact Information:</p>
+
+        <div class="contact-details">
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span>icept2023@gmail.com</span>
+          </div>
+
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
+            </svg>
+            <span>Institute of Computer Engineers and Pioneers of Technology</span>
+          </div>
+
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>Yumul St., Lopez, Philippines, 4316</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-logo-right">
+        <img src="home/Bagong-Pilipinas-Logo.png" alt="Bagong Pilipinas Logo">
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    renderNav('dcpet');
+    document.addEventListener('DOMContentLoaded', function () {
+      renderDcpetPage('dcpet-content', "DCpET/subject picture/dcpet2.png", "2nd Year", [
+        {
+          "title": "1st Semester",
+          "subjects": [
+            {
+              "title": "Computer Engineering as Discipline",
+              "links": {
+                "module": "DCpET/2nd Year/Computer Engineering as a Discipline SYLLABUS.pdf",
+                "ppt": "",
+                "quiz": "",
+                "output": ""
+              }
+            },
+            {
+              "title": "CPE Professional Course 1",
+              "links": {
+                "module": "",
+                "ppt": "",
+                "quiz": "",
+                "output": ""
+              }
+            },
+            {
+              "title": "Data Structures and Algorithm",
+              "links": {
+                "module": "DCpET/Instructional Materials/2nd Year IMs/data structure AND algorithms .pdf",
+                "ppt": "",
+                "quiz": "",
+                "output": ""
+              }
+            },
+            {
+              "title": "2D Animation",
+              "links": {
+                "module": "DCpET/Instructional Materials/2nd Year IMs/2D ANIMATION (1).pdf",
+                "ppt": "",
+                "quiz": "",
+                "output": ""
+              }
+            },
+            {
+              "title": "Fundamentals of Electronic Circuits",
+              "links": {
+                "module": "DCpET/Instructional Materials/2nd Year IMs/New IM Fundamental of Electronic Circuits..docx.pdf",
+                "ppt": "",
+                "quiz": "",
+                "output": ""
+              }
+            },
+            {
+              "title": "Fundamentals of Electrical Circuits",
+              "links": {
+                "module": "",
+                "ppt": "",
+                "quiz": "",
+                "output": ""
+              }
+            },
+            {
+              "title": "Filipinolohiya",
+              "links": {
+                "module": "DCpET/2nd Year/Filipinolohiya Syllabus.pdf",
+                "ppt": "",
+                "quiz": "",
+                "output": ""
+              }
+            },
+            {
+              "title": "Pathfit 3",
+              "links": {
+                "module": "",
+                "ppt": "",
+                "quiz": "",
+                "output": ""
+              }
+            },
+            {
+              "title": "Discrete Mathematics",
+              "links": {
+                "module": "DCpET/2nd Year/Discrete Math Syllabus.pdf",
+                "ppt": "",
+                "quiz": "",
+                "output": ""
+              }
+            }
+          ]
+        },
+        {
+          "title": "2nd Semester",
+          "subjects": [
+            {
+              "title": "CPE Professional Course 2",
+              "links": {
+                "module": "",
+                "ppt": "",
+                "quiz": "",
+                "output": ""
+              }
+            },
+            {
+              "title": "Database Management System 1",
+              "links": {
+                "module": "",
+                "ppt": "",
+                "quiz": "",
+                "output": ""
+              }
+            },
+            {
+              "title": "Fundamentals of Mixed Signals and Sensors",
+              "links": {
+                "module": "DCpET/2nd Year/FUNDAMENTALS OF MIXED SIGNALS AND SENSORS Syllabus.pdf",
+                "ppt": "",
+                "quiz": "",
+                "output": ""
+              }
+            },
+            {
+              "title": "Logic Circuits and Design",
+              "links": {
+                "module": "DCpET/Instructional Materials/2nd Year IMs/Francisco-IM-as-per-UTLDO-logic-circuits-and-design-5MB.pdf",
+                "ppt": "",
+                "quiz": "",
+                "output": ""
+              }
+            },
+            {
+              "title": "Operating System",
+              "links": {
+                "module": "DCpET/Instructional Materials/2nd Year IMs/Operating_System  final IM.pdf",
+                "ppt": "",
+                "quiz": "",
+                "output": ""
+              }
+            },
+            {
+              "title": "Ethics",
+              "links": {
+                "module": "DCpET/2nd Year/Ethics Syllabus.pdf",
+                "ppt": "",
+                "quiz": "",
+                "output": ""
+              }
+            },
+            {
+              "title": "Pathfit 4",
+              "links": {
+                "module": "",
+                "ppt": "",
+                "quiz": "",
+                "output": ""
+              }
+            },
+            {
+              "title": "Engineering Data Analysis",
+              "links": {
+                "module": "DCpET/2nd Year/Engineering Data Analysis Syllabus.pdf",
+                "ppt": "",
+                "quiz": "",
+                "output": ""
+              }
+            },
+            {
+              "title": "Computer Programming Java",
+              "links": {
+                "module": "DCpET/2nd Year/(Acosta) Computer Programming (JAVA)/Computer-Programmng (JAVA)-Syllabus.pdf",
+                "ppt": "",
+                "quiz": "",
+                "output": ""
+              }
+            }
+          ]
+        },
+        {
+          "title": "Summer Semester",
+          "subjects": [
+            {
+              "title": "Practicum 1",
+              "links": {
+                "module": "",
+                "ppt": "",
+                "quiz": "",
+                "output": ""
+              }
+            }
+          ]
+        }
+      ]);
+    });
+  </script>
+</body>
+
+</html>
